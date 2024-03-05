@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AGN MUSIC PLAYLIST</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/mobile.css" />
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="loader">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+        <div class="bar bar4"></div>
+        <div class="bar bar5"></div>
+        <div class="bar bar6"></div>
+        <div class="bar bar7"></div>
+        <div class="bar bar8"></div>
+        <div class="bar bar9"></div>
+        <div class="bar bar10"></div>
+        <div class="bar bar11"></div>
+        <div class="bar bar12"></div>
+        <div class="bar bar13"></div>
+        <div class="bar bar14"></div>
+        <div class="bar bar15"></div>
+        <div class="bar bar16"></div>
+        <div class="bar bar17"></div>
+        <div class="bar bar18"></div>
+        <div class="bar bar19"></div>
+        <div class="bar bar20"></div>
+      </div>
+    </div>
+
+    <div class="background-video">
+      <video id="video" muted loop preload="auto">
+        <source src="assets/video/background-video.webm" type="video/webm" />
+      </video>
+
+      <div class="player">
+        <!-- Dashboard -->
+        <div class="dashboard non-active">
+          <div class="playlist-btn"><i class="fas fa-list"></i></div>
+          <div class="tip-btn">
+            <span class="tip-text"
+              ><b>Useless tip:</b> Try it out on mobile devices</span
+            >
+            <i class="far fa-question-circle"></i>
+          </div>
+          <!-- Header -->
+          <header>
+            <h4>Now playing:</h4>
+            <h2>Song Name</h2>
+            <p>Artist</p>
+          </header>
+
+          <!-- CD -->
+          <div class="cd">
+            <div class="cd-thumb" style="background-image: url('')"></div>
+          </div>
+
+          <!-- Control -->
+          <div class="control">
+            <div class="btn btn-repeat">
+              <i class="fas fa-redo"></i>
+            </div>
+            <div class="btn btn-prev">
+              <i class="fas fa-step-backward"></i>
+            </div>
+            <div class="btn btn-toggle-play">
+              <i class="fas fa-pause icon-pause"></i>
+              <i class="fas fa-play icon-play"></i>
+            </div>
+            <div class="btn btn-next">
+              <i class="fas fa-step-forward"></i>
+            </div>
+            <div class="btn btn-random">
+              <i class="fas fa-random"></i>
+            </div>
+          </div>
+
+          <div class="progress-bar">
+            <div class="progress-time">
+              <p class="progress-time-current"></p>
+              <p class="progress-time-duration"></p>
+            </div>
+            <input
+              id="progress"
+              class="progress"
+              type="range"
+              value="0"
+              step="1"
+              min="0"
+              max="100"
+            />
+          </div>
+
+          <div class="volume-bar">
+            <i class="fas fa-volume-up volume-icon block"></i>
+            <i class="fas fa-volume-mute mute-icon"></i>
+            <input
+              id="volume"
+              class="volume"
+              type="range"
+              value="100"
+              step="1"
+              min="0"
+              max="100"
+            />
+          </div>
+
+          <audio id="audio" src="" preload="metadata"></audio>
+        </div>
+
+        <!-- Playlist -->
+        <div class="playlist non-active"></div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
