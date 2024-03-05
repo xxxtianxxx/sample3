@@ -32,6 +32,7 @@
   --seashell: hsl(20, 43%, 93%);
   --charcoal: hsl(203, 30%, 26%);
   --white: hsl(0, 0%, 100%);
+  --jet: hsl(0, 0%, 21%);
 
   /**
    * typography
@@ -303,7 +304,7 @@ body {
 \*-----------------------------------*/
 
 .header {
-  background-color: var(--white);
+  background-color: var(--jet);
   position: absolute;
   top: 10px;
   right: 10px;
@@ -338,13 +339,13 @@ body {
 .logo {
   font-family: var(--ff-philosopher);
   font-size: 4rem;
-  color: var(--charcoal);
+  color: var(--white);
   line-height: 1;
 }
 
 .nav-toggle-btn {
   font-size: 40px;
-  color: var(--charcoal);
+  color: var(--white);
 }
 
 .nav-toggle-btn ion-icon { --ionicon-stroke-width: 20px; }
@@ -360,7 +361,7 @@ body {
   top: 100%;
   left: 0;
   width: 100%;
-  background-color: var(--white);
+  background-color: var(--jet);
   padding-inline: 15px;
   max-height: 0;
   overflow: hidden;
@@ -369,15 +370,20 @@ body {
 }
 
 .navbar.active {
-  max-height: 300px;
+  color: var(--old-rose);
+  max-height: 400px;
   visibility: visible;
   transition-duration: 0.5s;
 }
 
-.navbar-list { margin-block-end: 10px; }
+.navbar-list { margin-block-end: 10px; 
+
+    border-block-start: 1px solid var(--jet);
+  margin-block: 25px;
+  }
 
 .navbar-link {
-  color: var(--charcoal);
+  color: var(--white);
   padding-block: 8px;
   line-height: 1.5;
   transition: var(--transition-1);
